@@ -1,0 +1,19 @@
+<h2>Product Details</h2>
+
+<div class="details" *ngIf="product">
+  <img src="{{product.image}}" alt="">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <h4>Rating:{{product.rating}}/5</h4>
+  <p>{{ product.description }}</p>
+
+  <div class="buttons">
+    <button (click)="addToCart(product)">Buy</button>
+    <div>
+      <input id="myInput" type="text" value="{{product.link}}" readonly>
+      <button (click)="copyLink()">Share</button>
+    </div>
+
+  </div>
+
+</div>

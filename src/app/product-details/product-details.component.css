@@ -1,0 +1,20 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+img {
+  width: 50%;
+  margin: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+}

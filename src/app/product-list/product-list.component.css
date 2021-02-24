@@ -1,0 +1,24 @@
+img {
+  width: 160px;
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  margin: 5px;
+  border: 1px solid #d9d9d9;
+  width: 170px;
+}
+a.link {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: #616161;
+  background-color: #e9ebed;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
