@@ -1,23 +1,43 @@
-<div class="product-list" *ngFor="let product of products">
-  <h3>
-    <a
-      [title]="product.name + ' details'"
-      [routerLink]="['/products',product.id]"
-    >
-      {{ product.name }}
-    </a>
-  </h3>
-  <img src="{{product.image}}" alt="">
-  <a class="link" href="{{product.link}}">
-      Link to real item
-  </a>
+<!--<div class="product-list" *ngFor="let product of products">-->
+<!--  <h3>-->
+<!--    <a-->
+<!--      [title]="product.name + ' details'"-->
+<!--      [routerLink]="['/products',product.id]"-->
+<!--    >-->
+<!--      {{ product.name }}-->
+<!--    </a>-->
+<!--  </h3>-->
+<!--  <img src="{{product.image}}" alt="">-->
+<!--  <a class="link" href="{{product.link}}">-->
+<!--      Link to real item-->
+<!--  </a>-->
 
-  <app-product-alerts [product]="product" (notify)="onNotify()">
-  </app-product-alerts>
+<!--  <app-product-alerts [product]="product" (notify)="onNotify()">-->
+<!--  </app-product-alerts>-->
+<!--</div>-->
+
+<div *ngFor="let category of catData">
+  <div class="cat_items" *ngIf="category.cat_id == data">
+    <div class="product-list" *ngFor="let product of category.cat_items" >
+      <div></div>
+      <h3>
+        <a
+          [title]="product.name + ' details'"
+          [routerLink]="['/products',product.id]"
+        >
+          {{ product.name }}
+        </a>
+      </h3>
+      <img class="item_image" src="{{product.image}}" alt="">
+      <a class="link" href="{{product.link}}">
+        Link to real item
+      </a>
+
+      <app-product-alerts [product]="product" (notify)="onNotify()">
+      </app-product-alerts>
+    </div>
+  </div>
+
 </div>
 
-<!--
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+

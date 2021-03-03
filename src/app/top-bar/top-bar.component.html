@@ -1,7 +1,14 @@
 <a [routerLink]="['/']">
-  <h1>Monitors</h1>
+  <h1>Store</h1>
 </a>
-
+<div class="categories">
+  <ul>
+    <li><a routerLink="/productList/1" >Monitors</a></li>
+    <li><a routerLink="/productList/2">Keyboards</a></li>
+    <li><a routerLink="/productList/3">PC Gaming Mice</a></li>
+    <li><a routerLink="/productList/4">Cat4</a></li>
+  </ul>
+</div>
 <a routerLink="/cart" class="button fancy-button">
   <i class="material-icons">shopping_cart</i>Checkout
 </a>

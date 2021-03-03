@@ -4,11 +4,12 @@ img {
 .product-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: white;
   margin: 5px;
   border: 1px solid #d9d9d9;
   width: 170px;
+  height: 300px;
+
 }
 a.link {
   border: 1px solid black;
@@ -16,6 +17,17 @@ a.link {
   text-align: center;
   color: #616161;
   background-color: #e9ebed;
+}
+.cat_items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.item_image {
+  object-fit: contain;
+  margin: auto;
+  max-height: 200px;
 }
 /*
 Copyright Google LLC. All Rights Reserved.
